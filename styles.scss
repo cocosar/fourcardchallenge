@@ -1,0 +1,153 @@
+// Reseting rules
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+// Body (container)
+body {
+    font-family: Poppins;
+}
+
+// Header
+
+.header {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    .title {
+        width: 50%;
+        font-size: 25px;
+        font-weight: 200;
+        span {
+            font-weight: bold;
+            display: block;
+        }
+    }
+    p {
+        width: 30%;
+        margin-top: 15px;
+        font-size: 15px;
+        color: hsl(229, 6%, 66%);
+    }
+}
+
+// CARDS (CONTAINER E INDIVIDUALES)
+
+.cards-container {
+    display: flex;
+    padding: 30px 50px;
+    
+    align-items: center;
+    justify-content: center;
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        //Margins aca?
+    }
+    .card {
+        border-radius: 10px;
+        width: 350px;
+        height: 250px;
+        margin: 15px;
+        padding: 25px;
+        -webkit-box-shadow: 0px 10px 50px -16px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 10px 50px -16px rgba(0,0,0,0.3);
+        box-shadow: 0px 10px 50px -16px rgba(0,0,0,0.3);
+
+        display: flex;
+        flex-flow: column nowrap;
+        .title {
+            font-weight: 600;
+            font-size: 22px;
+        }
+        p {
+            font-size: 15px;
+            margin: 10px 0px;
+            color: hsl(229, 6%, 66%);
+        }
+        img {
+            align-self: flex-end;
+            margin-top: 30px;
+        }
+
+    }
+
+    // BORDER COLORS
+    .red {
+        border-top: 5px solid hsl(0, 78%, 62%);
+    }
+    .yellow {
+        border-top: 5px solid hsl(34, 97%, 64%);
+    }
+    .blue {
+        border-top: 5px solid hsl(212, 86%, 64%);
+    }
+    .green {
+        border-top: 5px solid hsl(180, 62%, 55%);
+    }
+    
+}
+
+@media only screen and (max-width: 1024px){
+    
+    
+    body {
+        padding: 0px;
+        .header{
+            .title{
+                width: 100%;
+            }
+            p {
+                width: 60%;
+                padding: 0px 10px;
+            }
+        }
+    
+        .cards-container {
+            padding: 0px;
+            flex-flow: column;
+            .card{
+                margin-left: 0px;
+                margin-right: 0px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    body {
+        padding: 0px;
+        .header{
+            .title{
+                width: 100%;
+            }
+            p {
+                width: 100%;
+                padding: 0px 10px;
+            }
+        }
+    
+        .cards-container {
+            padding: 0px;
+            flex-flow: column;
+            .card{
+                width: 90vw;
+                margin-left: 0px;
+                margin-right: 0px;
+                height: auto;
+            }
+        }
+    }
+}
+
