@@ -1,4 +1,6 @@
 # Desafio FrontEnd - FrontEnd Mentor
+## VER EN:
+https://fourcardchallenge.vercel.app/
 
 # Frontend Mentor - Four card feature section
 
